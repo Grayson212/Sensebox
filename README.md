@@ -279,7 +279,7 @@ Die Station ist unter http://opensensemap.org/explore/573d79cc566b8d3c11114ac9 e
 Die Station steht in Buldern und wird auf einer Fensterbank im ersten Stock eines Mehrfamilienhauses aufgestellt.
 Problem an diesem Aufstellungsortes ist, dass sich die Fensterbank sehr stark aufheizt und das Messergebnis verfälscht.
 
-Foto einfügen
+
 
 #Kontakt
 
