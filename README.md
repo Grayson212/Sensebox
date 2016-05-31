@@ -264,11 +264,20 @@ Implementieung kurz Beschreiben
 
 #OpenSenseMap Registrierung
 
-Beschreibung der Sensorregistrierung
+Registrierung der Station auf openSenseMap unter dem Namen Station Philipp & Fabian.
+Die folgenden Sensoren wurden manuell eingerichtet:
+    
+    - Lichtintensität (in Lux)
+    - UV-Intensität(µW/cm²)
+    - Temperatur(°C)
+    - Luftfeuchtigkeit(%)
+
+Die Station ist unter http://opensensemap.org/explore/573d79cc566b8d3c11114ac9 erreichbar.
 
 #Stationsaufbau
 
-Wo wurde die Station aufgestellt?
+Die Station steht in Buldern und wird auf einer Fensterbank im ersten Stock eines Mehrfamilienhauses aufgestellt.
+Problem an diesem Aufstellungsortes ist, dass sich die Fensterbank sehr stark aufheizt und das Messergebnis verfälscht.
 
 Foto einfügen
 
