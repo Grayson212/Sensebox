@@ -1,26 +1,29 @@
-# Sensebox
+# Sensebox mit Temperatur, Luftfeuchtigkeit, UV und Lichtsensor
 
-Projekttitel
+Eine einfache Sensebox mit dem im Titel schon angemerkten Sensoren. 
 
-Beschreibung eurer Sensebox
-Ziel
+#Ziel
 
-Was soll gemessen werden? Welche Fragestellung wird adressiert?
-Materialien
+Die Sensebox soll die Temperatur, die Luftfeuchtigkeit, die UV Stärke und die Lichtintensität messen.
+
+#Materialien
+
 Aus der senseBox:edu
 
     Genuino UNO
-    Sensor 1
-    Sensor 2
-    ...
-
+    Kombinierter Temperatur- und Luftfeuchtigkeitssensor (HDC 1008)
+    UV-Sensor (VEML6070)
+    Lichtsensor (TSL45315)
+    Wiznet W5500 Ethernet Shield
+    Netzteil
+    Kabel
+    
 Zusätzliche Hardware
 
-    Shield X
-    Sensor Y
-    ...
+    Lankabel
+    Heißkleber
 
-Setup Beschreibung
+#Setup Beschreibung
 Hardwarekonfiguration
 
 Aufbau Beschreiben
@@ -28,7 +31,7 @@ Aufbau Beschreiben
 ggf. Erläutern wo Schwierigkeiten liegen
 
 Verkablung Fritzing Bild (http://fritzing.org/download/)
-Softwaresketch
+#Softwaresketch
 
 Implementieung kurz Beschreiben
 
@@ -38,14 +41,16 @@ Links zu zusätzlichen Bibliotheken
 
   OSM IDs unkenntlich machen
 
-OpenSenseMap Registrierung
+#OpenSenseMap Registrierung
 
 Beschreibung der Sensorregistrierung
-Stationsaufbau
+
+#Stationsaufbau
 
 Wo wurde die Station aufgestellt?
 
 Foto einfügen
-Kontakt
 
-Autor Email Datum
+#Kontakt
+
+Philipp Dieckmann, p.dieckmann@mail.de
