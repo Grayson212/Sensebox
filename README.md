@@ -44,13 +44,13 @@ Implementieung kurz Beschreiben
     #include <Wire.h>
     #include <HDC100X.h>
     //SenseBox ID
-    #define SENSEBOX_ID "573d79cc566b8d3c11114ac9"
+    #define SENSEBOX_ID "XXXXXXXXXXXXXXXXXXXXXXXXXX"
 
     //Sensor IDs
-    #define TEMPSENSOR_ID "573d79cc566b8d3c11114ace"
-    #define SENSOR1_ID "573d79cc566b8d3c11114acd" // Luftfeuchtigkeit 
-    #define SENSOR2_ID "573d79cc566b8d3c11114acc" // Licht 
-    #define UVSENSOR_ID "573d79cc566b8d3c11114acb"
+    #define TEMPSENSOR_ID "XXXXXXXXXXXXXXXXXXXXXXXXXX"
+    #define SENSOR1_ID "XXXXXXXXXXXXXXXXXXXXXXXXXX" // Luftfeuchtigkeit 
+    #define SENSOR2_ID "XXXXXXXXXXXXXXXXXXXXXXXXXX" // Licht 
+    #define UVSENSOR_ID "XXXXXXXXXXXXXXXXXXXXXXXXXX"
 
     // I2C Variablen Lichtsensor
     #define I2C_ADDR       (0x29)
@@ -145,7 +145,7 @@ Implementieung kurz Beschreiben
       //If-Schleife um die Uebermittlung falscher Daten auszuschließen.
       
       if (lux != 131070){
-      postFloatValue(lux, 1, "573d79cc566b8d3c11114acc");
+      postFloatValue(lux, 1, "XXXXXXXXXXXXXXXXXXXXXXXXXX");
       }
       else
       {
@@ -160,7 +160,7 @@ Implementieung kurz Beschreiben
       
       //If-Schleife um die Uebermittlung falscher Daten auszuschließen.
       if (hdc_temp_humi.getTemp() > -36){
-      postFloatValue(hdc_temp_humi.getTemp(), 1, "573d79cc566b8d3c11114ace");
+      postFloatValue(hdc_temp_humi.getTemp(), 1, "XXXXXXXXXXXXXXXXXXXXXXXXXX");
       }
       else
       {
@@ -169,7 +169,7 @@ Implementieung kurz Beschreiben
       
       //If-Schleife um die Uebermittlung falscher Daten auszuschließen.
       if (hdc_temp_humi.getHumi() > -0.5){
-      postFloatValue(hdc_temp_humi.getHumi(), 1, "573d79cc566b8d3c11114acd");
+      postFloatValue(hdc_temp_humi.getHumi(), 1, "XXXXXXXXXXXXXXXXXXXXXXXXXX");
       }
       else
       {
@@ -186,7 +186,6 @@ Implementieung kurz Beschreiben
 
       byte msb = 0, lsb = 0;
       uint16_t uv;
-  
       Wire.requestFrom(I2C_ADDR_UV + 1, 1); //MSB
       delay(1);
       if (Wire.available())
@@ -200,7 +199,7 @@ Implementieung kurz Beschreiben
       uv = (msb << 8) | lsb;
       
         //UVA sensitivity: 5.625 uW/cm²/step
-      postFloatValue(uv * 5.625, 1, "573d79cc566b8d3c11114acb");
+      postFloatValue(uv * 5.625, 1, "XXXXXXXXXXXXXXXXXXXXXXXXXX");
      
     // Ende von SENSOR 3 (UV-Sensor)
       }
@@ -240,7 +239,7 @@ Implementieung kurz Beschreiben
     }
 
     void waitForServerResponse()
-    { 
+     { 
       //Ankommende Bytes ausgeben
       boolean repeat = true; 
       do{ 
@@ -248,17 +247,17 @@ Implementieung kurz Beschreiben
         { 
           char c = client.read();
           Serial.print(c); 
-    } 
-    //Verbindung beenden 
-    if (!client.connected()) 
-    {
-      Serial.println();
-      Serial.println("--------------"); 
-      Serial.println("Disconnecting.");
-      Serial.println("--------------"); 
-      client.stop(); 
-      repeat = false; 
-    } 
+         } 
+         //Verbindung beenden 
+        if (!client.connected()) 
+        {
+         Serial.println();
+         Serial.println("--------------"); 
+         Serial.println("Disconnecting.");
+         Serial.println("--------------"); 
+         client.stop(); 
+          repeat = false; 
+        } 
       }while (repeat);
     }
 
