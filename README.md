@@ -28,9 +28,14 @@ Hardwarekonfiguration
 
 Aufbau Beschreiben
 
-ggf. Erläutern wo Schwierigkeiten liegen
+Auf Genuino UNO haben wir das W5500 Ethernet-Shield aufgebaut um die Stromversorgung und die Internetverbindung sicherzustellen. Dieses wird durch einen PoE-Adapter realisiert. Dadurch ist es auch möglich, dass die Sensebox mit nur einem Kabel betrieben wird.
 
-Verkablung Fritzing Bild (http://fritzing.org/download/)
+Das beigelegte Breatboard aus der senseBox:edu haben wir verwendet, da unsere wassderdichte Box groß genug war um die Auflage problemlos zu beherbergen. Den UV und den Licht-Sensor haben wir mittels Heißkleber nach außen sichbar befestigt, um optimalen Lichteinfall zu gewährleisten. 
+
+Den Temperatur und Luftfeuchtigkeitssensor haben wir mittels einer kleinen auf den Kopf gestellten Verteilerdose außen an der Sensobox befestigt. Durch die unten offene Verteilerdose ist der Sensor vor Regen geschützt und liefert vom inneren der Box unabhängige Messwerte.
+
+Problem bei diesem Aufbau der Sensbox war in unserem Fall, dass die Fensterbank auf der diese Box aufgesellt wurde sich den Tag über aufheizt und somit das Messergebnis der Temperatur verfälscht.
+
 #Softwaresketch
 
 Implementieung basierent auf der von OpenSenseMap erhaltenen Grundeinstellungen. 
