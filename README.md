@@ -33,7 +33,7 @@ ggf. Erläutern wo Schwierigkeiten liegen
 Verkablung Fritzing Bild (http://fritzing.org/download/)
 #Softwaresketch
 
-Implementieung kurz Beschreiben
+Implementieung basierent auf der von OpenSenseMap erhaltenen Grundeinstellungen. 
 
     #include <SPI.h>
     #include <Ethernet.h>
