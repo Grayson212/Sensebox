@@ -26,8 +26,6 @@ Zusätzliche Hardware
 #Setup Beschreibung
 Hardwarekonfiguration
 
-Aufbau Beschreiben
-
 Auf Genuino UNO haben wir das W5500 Ethernet-Shield aufgebaut um die Stromversorgung und die Internetverbindung sicherzustellen. Dieses wird durch einen PoE-Adapter realisiert. Dadurch ist es auch möglich, dass die Sensebox mit nur einem Kabel betrieben wird.
 
 ![alt tag](https://github.com/Grayson212/Sensebox/blob/master/IMAG0595.jpg)
@@ -40,7 +38,7 @@ Problem bei diesem Aufbau der Sensbox war in unserem Fall, dass die Fensterbank 
 
 #Softwaresketch
 
-Implementieung basierent auf der von OpenSenseMap erhaltenen Grundeinstellungen. 
+Implementieung basierent auf der von OpenSenseMap erhaltenen Grundeinstellungen. Die Sensoradressen sind unkenntlich gemacht.
 
     #include <SPI.h>
     #include <Ethernet.h>
