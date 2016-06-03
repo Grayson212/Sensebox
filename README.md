@@ -30,6 +30,8 @@ Aufbau Beschreiben
 
 Auf Genuino UNO haben wir das W5500 Ethernet-Shield aufgebaut um die Stromversorgung und die Internetverbindung sicherzustellen. Dieses wird durch einen PoE-Adapter realisiert. Dadurch ist es auch möglich, dass die Sensebox mit nur einem Kabel betrieben wird.
 
+![alt tag](https://github.com/Grayson212/Sensebox/blob/master/IMAG0595.jpg)
+
 Das beigelegte Breatboard aus der senseBox:edu haben wir verwendet, da unsere wassderdichte Box groß genug war um die Auflage problemlos zu beherbergen. Den UV und den Licht-Sensor haben wir mittels Heißkleber nach außen sichbar befestigt, um optimalen Lichteinfall zu gewährleisten. 
 
 Den Temperatur und Luftfeuchtigkeitssensor haben wir mittels einer kleinen auf den Kopf gestellten Verteilerdose außen an der Sensobox befestigt. Durch die unten offene Verteilerdose ist der Sensor vor Regen geschützt und liefert vom inneren der Box unabhängige Messwerte.
